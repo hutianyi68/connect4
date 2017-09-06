@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+    <LinearLayout
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="5dp">
+        <ImageView
+            android:layout_width="30dip"
+            android:layout_height="30dip"
+            android:paddingLeft="5dp"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/logo"
+            android:scaleType="fitStart" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Connect 4"
+            android:paddingLeft="5dip"
+            android:textSize="18sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/btn"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_below="@+id/logo">
+
+        <Button
+            android:text="START GAME"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button"
+            android:textAlignment="center"
+            android:textSize="24sp" />
+
+        <TextView
+            android:paddingTop="10dip"
+            android:text="NAME: TIANYI HU"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:fontFamily="sans-serif" />
+        <TextView
+            android:paddingTop="10dip"
+            android:text="UID: 3035391288"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"/>
+
+    </LinearLayout>
+</RelativeLayout>
